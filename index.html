@@ -15,12 +15,13 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="css/clean-blog.min.css" rel="stylesheet">
+    <link href="css/clean-blog.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400' rel='stylesheet' type='text/css'>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -50,18 +51,15 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="about.html">About</a>
-                    </li>
-                    <li>
-                        <a href="install.php">Presskit</a>
-                    </li>
-                    <li>
-                        <a href="contact.html">Contact</a>
-                    </li>
+                  <li class="page-scroll">
+                    <a href="index.php">Presskit</a>
+                  </li>
+                  <li class="page-scroll">
+                    <a href="#about">About</a>
+
+                  <li class="page-scroll">
+                    <a href="#contact">Contact</a>
+                  </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -71,7 +69,7 @@
 
     <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
-    <header class="intro-header" style="background-image: url('img/home-bg.jpg')">
+    <header class="intro-header" style="background-image: url('img/MonolithSide.png')">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
@@ -80,12 +78,54 @@
                         <hr class="small">
                         <span class="subheading">A Game about Atonement</span>
                     </div>
+                    <div class = "center-video">
+                      <div class="video">
+                        <iframe width="100%" height="100%" src="//www.youtube.com/embed/_mF8KkDiIdk"
+                        frameborder="0" allowfullscreen>
+                      </iframe>
+                    </div>
+                  </div>
                 </div>
+
             </div>
         </div>
-    </header>
 
-    <!-- Main Content -->
+    </header>
+    <section class="success" id="about">
+
+      <div class="about">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 text-center">
+              <h2>About the Game</h2>
+
+            </div>
+          </div>
+          <div class="row">
+            <div class = "abouttext">
+              <div class="col-lg-4 col-lg-offset-2">
+                <p>Aeho is a game about atonement. It is made by Eric Rawn, a high school student from Maine.</p>
+              </div>
+              <div class="col-lg-4">
+                <p>It is a 3D Fixed Axis Adventure game about a person (you), and your journey to find something. Life, enlightentment, atonement, inner peace, the player can decide.   </p>
+              </div>
+            </div>
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+              <a href="download.html" class="btn btn-lg btn-outline">
+                <i class="fa fa-download"></i> Download the Game
+
+
+            </a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Main Content
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
@@ -134,7 +174,7 @@
                     <p class="post-meta">Posted by <a href="#">Start Bootstrap</a> on July 8, 2014</p>
                 </div>
                 <hr>
-                <!-- Pager -->
+                 Pager
                 <ul class="pager">
                     <li class="next">
                         <a href="#">Older Posts &rarr;</a>
@@ -145,44 +185,63 @@
     </div>
 
     <hr>
-
+  -->
     <!-- Footer -->
-    <footer>
+    <footer class="text-center">
+      <div class="footer-above">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <ul class="list-inline text-center">
-                        <li>
-                            <a href="#">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/EricRawn">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
-                    </ul>
-                    <p class="copyright text-muted">Copyright &copy; Eric Rawn 2014</p>
-                </div>
+          <div class="row">
+            <div class="footer-col col-md-4">
+              <h3>Location</h3>
+              <p>York, Maine</p>
             </div>
+            <div class="footer-col col-md-4">
+              <h3>Around the Web</h3>
+              <ul class="list-inline">
+                <li>
+                  <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
+                </li>
+                <li>
+                  <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="https://github.com/EricRawn" class="btn-social btn-outline"><i class="fa fa-fw fa-github"></i></a>
+                </li>
+                <li>
+                  <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-dribbble"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-col col-md-4">
+              <h3>About Eric Rawn</h3>
+              <p> Eric Rawn is a 16 year old with a passion for making meaningful experiences. He enjoys composing music, drawing, writing, programming, and everything else that comes along with game development.</p>
+            </div>
+          </div>
         </div>
+      </div>
+      <div class="footer-below">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              Copyright &copy; Eric Rawn 2014
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
 
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes)
+    <div class="scroll-top page-scroll visible-xs visble-sm">
+      <a class="btn btn-primary" href="#intro-header">
+        <div class="scrollbtn">
+        <i class="fa fa-chevron-up"></i>
+      </div>
+      </a>
+    </div>
+--> 
     <!-- jQuery -->
     <script src="js/jquery.min.js"></script>
 
